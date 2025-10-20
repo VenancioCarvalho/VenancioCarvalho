@@ -1,12 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <title>Nome Sobrenome — Portfólio</title>
+
+    <meta
+      name="description"
+      content="Portfólio profissional com projetos, formação e contato."
+    />
+    <meta property="og:title" content="Nome Sobrenome — Portfólio" />
+    <meta
+      property="og:description"
+      content="Projetos e experiências em engenharia/tecnologia."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/perfil.jpg" />
+    <meta name="theme-color" content="#0e1418" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <h1 class="brand">Nome Sobrenome • Profissão</h1>
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 6h18M3 12h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+
+        <ul class="nav-links" id="primary-nav">
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section id="perfil" class="sec hero">
+        <div class="hero__text">
+          <h2 class="hero__title">
+            Olá, sou <span class="accent">Nome Sobrenome</span>
+          </h2>
+          <p class="hero__lead">
+            Profissional/Estudante de <strong>Área de Atuação</strong>, com
+            interesse em <em>Tema 1</em>, <em>Tema 2</em>, <em>Tema 3</em> e
+            <em>Tema 4</em>.
+          </p>
+
+          <ul class="chips" aria-label="Áreas de interesse">
+            <li>Tema 1</li>
+            <li>Tema 2</li>
+            <li>Tema 3</li>
+            <li>Tema 4</li>
+          </ul>
+        </div>
+
+        <figure class="hero__media">
+          <img src="img/perfil.jpg" alt="Foto de perfil" class="avatar" />
+        </figure>
+      </section>
+
+      <!-- Projetos -->
+      <section id="projetos" class="sec">
+        <div class="sec__head">
+          <h2 class="sec__title">Projetos em Destaque</h2>
+          <p class="sec__subtitle">
+            Seleção de trabalhos práticos e estudos aplicados.
+          </p>
+        </div>
+
+        <div class="grid">
+          <!-- Projeto A -->
+          <article class="card">
+            <header class="card__head">
+              <h3 class="card__title">Projeto A — Título Genérico</h3>
+              <ul class="tags" aria-label="Tecnologias">
+                <li>Tecnologia 1</li>
+                <li>Tecnologia 2</li>
+                <li>Tecnologia 3</li>
+              </ul>
+              <time class="meta">2025</time>
+            </header>
+
+            <p class="card__desc">
+              Breve descrição do projeto A. Explique o objetivo, o funcionamento
+              geral e o resultado alcançado de forma resumida.
+            </p>
+
+            <div class="card__media">
+              <img src="img/projeto-a/img1.png" alt="Imagem do Projeto A (1)" />
+              <img src="img/projeto-a/img2.png" alt="Imagem do Projeto A (2)" />
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener"
+                >Repositório</a
+              >
+              <a
+                class="btn btn--primary"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Demonstração</a
+              >
+            </div>
+          </article>
+
+          <!-- Projeto B -->
+          <article class="card">
+            <header class="card__head">
+              <h3 class="card__title">Projeto B — Título Genérico</h3>
+              <ul class="tags" aria-label="Ferramentas">
+                <li>Ferramenta 1</li>
+                <li>Ferramenta 2</li>
+                <li>Ferramenta 3</li>
+              </ul>
+              <time class="meta">2025</time>
+            </header>
+
+            <p class="card__desc">
+              Breve descrição do projeto B. Destaque escopo, responsabilidades e
+              principais aprendizados durante o desenvolvimento.
+            </p>
+
+            <div class="card__media three">
+              <img src="img/projeto-b/img1.png" alt="Imagem do Projeto B (1)" />
+              <img src="img/projeto-b/img2.png" alt="Imagem do Projeto B (2)" />
+              <img src="img/projeto-b/img3.png" alt="Imagem do Projeto B (3)" />
+            </div>
+
+            <div class="card__actions">
+              <a
+                class="btn btn--primary"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Repositório</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Formação -->
+      <section id="formacao" class="sec">
+        <h2 class="sec__title">Formação e Cursos</h2>
+        <ul class="list">
+          <li><strong>Instituição X</strong> — Curso/Graduação (Ano–Ano)</li>
+          <li><strong>Curso Livre</strong> — Plataforma/Escola (Ano)</li>
+          <li><strong>Certificação</strong> — Provedor (Ano)</li>
+          <li><strong>Idioma</strong> — Nível (Ano)</li>
+        </ul>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="sec">
+        <h2 class="sec__title">Redes e Contato</h2>
+        <ul class="links">
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="mailto:contato@exemplo.com">E-mail</a></li>
+          <li><a href="docs/curriculo.pdf" download>Baixar Currículo</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="ftr">
+      <p>© 2025 Nome Sobrenome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
