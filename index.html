@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nome Sobrenome — Portfólio</title>
+    <title>Venâncio Carvalho — Portfólio</title>
 
     <meta
       name="description"
       content="Portfólio profissional com projetos, formação e contato."
     />
-    <meta property="og:title" content="Nome Sobrenome — Portfólio" />
+    <meta property="og:title" content="Venâncio Carvalho — Portfólio" />
     <meta
       property="og:description"
-      content="Projetos e experiências em engenharia/tecnologia."
+      content="Projetos e experiências em Engenharia de Computação."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/perfil.jpg" />
@@ -29,7 +29,7 @@
   <body>
     <header class="site-header">
       <nav class="navbar">
-        <h1 class="brand">Nome Sobrenome • Profissão</h1>
+        <h1 class="brand">Venâncio Carvalho</h1>
 
         <button
           class="menu-toggle"
@@ -59,24 +59,25 @@
       <section id="perfil" class="sec hero">
         <div class="hero__text">
           <h2 class="hero__title">
-            Olá, sou <span class="accent">Nome Sobrenome</span>
+            Olá, sou <span class="accent">Venâncio Carvalho</span>
           </h2>
           <p class="hero__lead">
-            Profissional/Estudante de <strong>Área de Atuação</strong>, com
-            interesse em <em>Tema 1</em>, <em>Tema 2</em>, <em>Tema 3</em> e
-            <em>Tema 4</em>.
+            Estudante de <strong>Engenharia de Computação</strong>, com
+            interesse em <em>Engenharia de Dados</em>,
+            <em>Ciência de Dados</em>, <em>Desenvolvimento de Aplicações</em> e
+            <em>Segurança da Informação</em>.
           </p>
 
           <ul class="chips" aria-label="Áreas de interesse">
-            <li>Tema 1</li>
-            <li>Tema 2</li>
-            <li>Tema 3</li>
-            <li>Tema 4</li>
+            <li>Data Engineering</li>
+            <li>Data Science</li>
+            <li>Information Security</li>
+            <li>Backend</li>
           </ul>
         </div>
 
         <figure class="hero__media">
-          <img src="img/perfil.jpg" alt="Foto de perfil" class="avatar" />
+          <img src="img/perfil.png" alt="Foto de perfil" class="avatar" />
         </figure>
       </section>
 
@@ -93,72 +94,83 @@
           <!-- Projeto A -->
           <article class="card">
             <header class="card__head">
-              <h3 class="card__title">Projeto A — Título Genérico</h3>
+              <h3 class="card__title">Classificadores Naive Bayes e LDA</h3>
               <ul class="tags" aria-label="Tecnologias">
-                <li>Tecnologia 1</li>
-                <li>Tecnologia 2</li>
-                <li>Tecnologia 3</li>
+                <li>Python</li>
+                <li>Jupyter</li>
+                <li>scikit-learn</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
               </ul>
               <time class="meta">2025</time>
             </header>
 
             <p class="card__desc">
-              Breve descrição do projeto A. Explique o objetivo, o funcionamento
-              geral e o resultado alcançado de forma resumida.
+              Notebook explorando a classificação supervisionada com
+              <strong>Naive Bayes</strong> e
+              <strong>Linear Discriminant Analysis (LDA)</strong>. Inclui
+              preparo do dataset, divisão treino/teste, padronização,
+              <em>cross-validation</em>, comparação de métricas (accuracy,
+              precision, recall, F1), matriz de confusão e curvas ROC/AUC.
             </p>
 
             <div class="card__media">
-              <img src="img/projeto-a/img1.png" alt="Imagem do Projeto A (1)" />
-              <img src="img/projeto-a/img2.png" alt="Imagem do Projeto A (2)" />
+              <img
+                src="img/ml-naive-lda/espaco-original.png"
+                alt="Dispersão das classes 0 e 1 no espaço original (Y1 × Y2)"
+              />
+              <img
+                src="img/ml-naive-lda/projecao-2d.png"
+                alt="Dispersão das classes 0 e 1 após projeção em 2D (Z1 × Z2)"
+              />
             </div>
 
             <div class="card__actions">
-              <a class="btn btn--ghost" href="#" target="_blank" rel="noopener"
-                >Repositório</a
-              >
               <a
                 class="btn btn--primary"
-                href="#"
+                href="https://github.com/VenancioCarvalho/Classificadores-Naive-Bayes-e-LDA"
                 target="_blank"
                 rel="noopener"
-                >Demonstração</a
+                >GitHub</a
               >
             </div>
           </article>
 
           <!-- Projeto B -->
           <article class="card">
-            <header class="card__head">
-              <h3 class="card__title">Projeto B — Título Genérico</h3>
-              <ul class="tags" aria-label="Ferramentas">
-                <li>Ferramenta 1</li>
-                <li>Ferramenta 2</li>
-                <li>Ferramenta 3</li>
-              </ul>
-              <time class="meta">2025</time>
-            </header>
+  <header class="card__head">
+    <h3 class="card__title">Previsão de Preços com LSTM</h3>
+    <ul class="tags" aria-label="Tecnologias">
+      <li>Python</li>
+      <li>Jupyter</li>
+      <li>TensorFlow/Keras</li>
+      <li>Pandas</li>
+      <li>Matplotlib</li>
+    </ul>
+    <time class="meta">2025</time>
+  </header>
 
-            <p class="card__desc">
-              Breve descrição do projeto B. Destaque escopo, responsabilidades e
-              principais aprendizados durante o desenvolvimento.
-            </p>
+  <p class="card__desc">
+    Modelo de série temporal usando <strong>LSTM</strong> para prever preços de ações.
+    Pipeline inclui limpeza e normalização, janelas deslizantes, treino/validação e
+    comparação entre valores observados e previstos.
+  </p>
 
-            <div class="card__media three">
-              <img src="img/projeto-b/img1.png" alt="Imagem do Projeto B (1)" />
-              <img src="img/projeto-b/img2.png" alt="Imagem do Projeto B (2)" />
-              <img src="img/projeto-b/img3.png" alt="Imagem do Projeto B (3)" />
-            </div>
+  <div class="card__media">
+    
+    <img
+      src="img/lstm/series-predicao.png"
+      alt="Linha do tempo com série de preços: treino em azul, observado em laranja e previsão em verde"
+    />
 
-            <div class="card__actions">
-              <a
-                class="btn btn--primary"
-                href="#"
-                target="_blank"
-                rel="noopener"
-                >Repositório</a
-              >
-            </div>
-          </article>
+  </div>
+
+  <div class="card__actions">
+    <a class="btn btn--primary" href="https://github.com/VenancioCarvalho/lstm_aplicada_predicao_acoes" target="_blank" rel="noopener">GitHub</a>
+    
+  </div>
+</article>
+
         </div>
       </section>
 
@@ -166,10 +178,10 @@
       <section id="formacao" class="sec">
         <h2 class="sec__title">Formação e Cursos</h2>
         <ul class="list">
-          <li><strong>Instituição X</strong> — Curso/Graduação (Ano–Ano)</li>
-          <li><strong>Curso Livre</strong> — Plataforma/Escola (Ano)</li>
-          <li><strong>Certificação</strong> — Provedor (Ano)</li>
-          <li><strong>Idioma</strong> — Nível (Ano)</li>
+          <li>
+            <strong>Universidade Federal do Ceará</strong> — Engenharia de
+            Computação (2020–Atual)
+          </li>
         </ul>
       </section>
 
@@ -177,20 +189,46 @@
       <section id="contato" class="sec">
         <h2 class="sec__title">Redes e Contato</h2>
         <ul class="links">
-          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="mailto:contato@exemplo.com">E-mail</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/venancio-carvalho-a69815250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/VenancioCarvalho"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/venancio_carvalho24?igsh=ejh1NzRlMjY4emRm"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+          </li>
+          <li><a href="mailto:venanciocarvalho95@gmail.com">E-mail</a></li>
           <li><a href="docs/curriculo.pdf" download>Baixar Currículo</a></li>
         </ul>
       </section>
     </main>
 
-    <footer class="ftr">
-      <p>© 2025 Nome Sobrenome. Todos os direitos reservados.</p>
+    <footer>
+      <center><small>
+        © <span id="year"></span> Venâncio Carvalho. Todos os direitos
+        reservados.
+      </small>
     </footer>
-
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script></center>
+      
     <script src="script.js"></script>
   </body>
 </html>
